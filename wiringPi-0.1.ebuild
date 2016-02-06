@@ -32,6 +32,8 @@ src_compile() {
 }
 
 src_install() {
+	mkdir -p "${D}/usr/lib"
+	mkdir -p "${D}/usr/bin"
 	for d in ${MAKEDIRS}; do
 		cd "${WORKDIR}/${P}/${d}"	
 		emake DESTDIR="${D}/usr/" PREFIX="" install
