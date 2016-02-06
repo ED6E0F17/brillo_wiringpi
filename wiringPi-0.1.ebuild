@@ -18,7 +18,7 @@ IUSE=""
 RDEPEND=""
 DEPEND="${RDEPEND}"
 
-MAKEDIRS="wiringPi devLib"
+MAKEDIRS="wiringPi devLib gpio"
 
 src_prepare() {
 	epatch "${FILESDIR}/git-Makefile-fix.patch"
