@@ -29,6 +29,7 @@ src_compile() {
 
 src_install() {
 	tc-export CXX
+	tc-export CC
 	mkdir -p "${D}/lib"
 	mkdir -p "${D}/bin"
 	for d in ${MAKEDIRS}; do
